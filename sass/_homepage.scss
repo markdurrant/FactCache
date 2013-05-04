@@ -1,0 +1,130 @@
+//===============================================================================
+// HOMEPAGE
+// 
+// <div class="wrap">
+
+//   <div class="intro">
+//     <p>follow the data hackathon</p>
+//     <p>London 4<sup>th</sup>-5th<sup>th</sup> May 2013</p>
+//   </div>
+
+//   <ul class="facts-list clear-fix">
+
+//     <li class="fact-container">
+//       <div class="visual">
+//         <canvas id="myChart" height="170" width="170"></canvas>
+//       </div> <!-- end .visual -->
+
+//       <h3 class="fact-title">Child mortality rates vs GDP in countries that are not awesome at health-care and pretty amazing at drilling for oil</h3>
+
+//       <div class="data">
+//         <span class="label">DATA</span>
+//         <a href="">WHO: child mortality rates by country</a>
+//         <a href="">loadsamoney.com countries GDP list 2013</a>
+//       </div> <!-- end .data -->
+
+//       <div class="project">
+//         <span class="label">PROJECT</span>
+//         <a href="">totally awesome project thing</a>
+//       </div> <!-- end .project -->
+
+//       <div class="share">
+//         <span class="twitter-btn fontello">T</span>
+//       </div> <!-- end .share -->
+
+//     </li> <!-- end .fact-container -->
+//   </ul> <!-- end .facts-list -->
+// </div> <!-- end .wrap -->
+//===============================================================================
+
+.intro{
+  @include text-shadow(1px 1px hsla(0, 0, 100, .4));
+
+  text-align: center;
+  margin: 15px 0;
+  color: #828f99;
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.fact-container{
+  @include border-radius(2px);
+  @include box-shadow(6px 6px #a9becf);
+
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100%;
+  float: left;
+}
+
+.visual{
+  width: 170px;
+  height: 170px;
+  margin: 20px auto;
+}
+
+.fact-title{
+  font-size: 20px;
+  line-height: 1.15;
+  color: #3f3d4d;
+  margin: 20px 0;
+}
+
+.data,
+.project{
+  margin-bottom: 10px;
+}
+
+.label{
+  @include border-radius(2px);
+
+  background-color: #beccd6;
+  color: #384a5c;
+  line-height: 16px;
+  padding: 1px 1px 1px 3px;
+  position: relative;
+  margin-right: 10px;
+  z-index: 2;
+
+  &:after{
+    @include rotate(45deg);
+    @include border-radius(3px);
+
+    position: absolute;
+    z-index: -1;
+    right: -7px;
+    top: 2px; 
+    content: "";
+    background-color: #beccd6;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.share{
+  @include border-radius(2px);
+  @include text-shadow(1px 1px hsla(0, 0, 0, .2));
+  @include background-image(linear-gradient(hsla(0, 0, 100, .075), hsla(0, 0, 0, .075)));
+  @include transition-property(all);
+  @include transition-duration(.3s);
+
+  height: 30px;
+  text-align: center;
+  background-color: #4099FF;
+  color: white;
+  line-height: 31px;
+  font-size: 22px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid darken(#4099FF, 6);
+  border-bottom: 1px solid darken(#4099FF, 13);
+
+  &:hover{
+    background-color: darken(#4099FF, 10);
+    border: 1px solid darken(#4099FF, 15);
+    border-bottom: 1px solid darken(#4099FF, 20);
+  }
+}

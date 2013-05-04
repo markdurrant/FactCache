@@ -12,6 +12,28 @@ $body-font: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $wrap-width: 38em;
 
+// colors stolen from http://designmodo.github.io/Flat-UI/
+$turquoise: #1ABC9C;
+$emerland: #2ECC71;
+$blue: #3498DB;
+$purple: #9B59B6;
+$dark-blue: #34495E;
+$yellow: #F1C40F;
+$orange: #E67E22;
+$red: #E74C3C;
+$light-grey: #ECF0F1;
+$grey: #95A5A6;
+
+$turquoise-alt: #16A085;
+$emerland-alt: #27AE60;
+$blue-alt: #2980B9;
+$purple-alt: #8E44AD;
+$dark-blue-alt: #2C3E50;
+$yellow-alt: #F39C12;
+$orange-alt: #D35400;
+$red-alt: #C0392B;
+$light-grey-alt: #BDC3C7;
+$grey-alt: #7F8C8D;
 //===============================================================================
 // IMPORTS
 //===============================================================================
@@ -49,6 +71,7 @@ $wrap-width: 38em;
 @import "_footer";
 
 // PAGES: styles per page
+@import "_homepage";
 
 // BROWSER-FIXES: styles per page
 @import "_browser-fixes";
@@ -60,97 +83,3 @@ $wrap-width: 38em;
 // DEV-STYLES
 //===============================================================================
 // playground for development
-.fontello{
-  font-family: 'fontello';
-}
-
-.intro{
-  @include text-shadow(1px 1px hsla(0, 0, 100, .4));
-
-  text-align: center;
-  margin: 15px 0;
-  color: #828f99;
-
-  p{
-    margin-bottom: 0;
-  }
-}
-
-.fact-container{
-  @include border-radius(2px);
-  @include box-shadow(6px 6px #a9becf);
-
-  background-color: white;
-  margin: 0 20px 30px;
-  padding: 10px
-}
-
-.visual{
-  background-color: hsl(0,0,90);
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-}
-
-.fact-title{
-  font-size: 20px;
-  line-height: 1.15;
-  color: #373640;
-  margin: 20px 0;
-}
-
-.data,
-.project{
-  margin-bottom: 10px;
-}
-
-.label{
-  @include border-radius(2px);
-
-  background-color: #beccd6;
-  color: #384a5c;
-  line-height: 16px;
-  padding: 1px 1px 1px 3px;
-  position: relative;
-  margin-right: 10px;
-  z-index: 2;
-
-  &:after{
-    @include rotate(45deg);
-    @include border-radius(3px);
-
-    position: absolute;
-    z-index: -1;
-    right: -6px;
-    top: 2px; 
-    content: "";
-    background-color: #beccd6;
-    width: 15px;
-    height: 15px;
-  }
-}
-
-.share{
-  @include border-radius(2px);
-  @include text-shadow(1px 1px hsla(0, 0, 0, .2));
-  @include background-image(linear-gradient(hsla(0, 0, 100, .075), hsla(0, 0, 0, .075)));
-  @include transition-property(all);
-  @include transition-duration(.3s);
-
-  height: 30px;
-  text-align: center;
-  background-color: #4099FF;
-  color: white;
-  line-height: 31px;
-  font-size: 22px;
-  margin-top: 20px;
-  cursor: pointer;
-  border: 1px solid darken(#4099FF, 6);
-  border-bottom: 1px solid darken(#4099FF, 13);
-
-  &:hover{
-    background-color: darken(#4099FF, 10);
-    border: 1px solid darken(#4099FF, 15);
-    border-bottom: 1px solid darken(#4099FF, 20);
-  }
-}
