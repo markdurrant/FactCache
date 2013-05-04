@@ -108,7 +108,7 @@
   @include border-radius(2px);
   @include text-shadow(1px 1px hsla(0, 0, 0, .2));
   @include background-image(linear-gradient(hsla(0, 0, 100, .075), hsla(0, 0, 0, .075)));
-  @include transition-property(all);
+  @include transition-property(background-color, border, border-bottom);
   @include transition-duration(.3s);
 
   height: 30px;

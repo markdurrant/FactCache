@@ -45,6 +45,9 @@ dd{
 }
 
 a{
+  @include transition-property(color);
+  @include transition-duration(.2s);
+
   color: $link;
   font-weight: bolder;
 

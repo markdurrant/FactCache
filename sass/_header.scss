@@ -35,7 +35,7 @@
 
 .info-btn{
   @include text-shadow(1px 1px hsla(0, 0, 100, .2));
-  @include transition-property(all);
+  @include transition-property(text-shadow, color);
   @include transition-duration(.3s);
 
   width: 50px;
