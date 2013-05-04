@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  // example chart
-
-
   var turquoise = "#1ABC9C";
   var emerland = "#2ECC71";
   var blue = "#3498DB";
@@ -47,12 +44,17 @@ $(document).ready(function() {
     },
   ]
 
+  // show/hide header stuff
+  $('.info-btn, .info-content').click(function () {
+    $('.site-header').toggleClass('show-info');
+  });
+
   // generate some extra items for styling purposes
   for ( var i = 0; i < 3; i++ ){
     $(".fact-container").clone().appendTo(".facts-list"); 
   }
 
-
+  // example chart
   var ctx = document.getElementById('myChart').getContext('2d');
   var myNewChart = new Chart(ctx).Pie(data, {
     animateScale: true,
