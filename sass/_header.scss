@@ -10,7 +10,7 @@
 // </header> <!-- end .site-header -->
 //===============================================================================
 .site-header{
-  @include background-image(linear-gradient(#ff8600, #f57a00));
+  @include background-image(linear-gradient(#f57a00, #ff8600));
   @include box-shadow(0 4px hsla(0, 0, 0, .075));
   @include transition-property(top);
   @include transition-duration(.25s);
@@ -30,6 +30,21 @@
 
 .info-content{
   height: 200px;
+  padding: 10px;
+
+  h3{
+    @include text-shadow(2px 2px hsla(0, 0, 0 ,.2));
+
+    font-family: "brandon-grotesque";
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
+    max-width: 700px;
+  }
+
+  a{
+    color: white;
+  }
 }
 
 .branding{
