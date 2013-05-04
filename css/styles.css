@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?78519175");
+  src: url("../font/fontello.eot?78519175#iefix") format("embedded-opentype"), url("../font/fontello.woff?78519175") format("woff"), url("../font/fontello.ttf?78519175") format("truetype"), url("../font/fontello.svg?78519175#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 18, ../sass/_normalize.scss */
 article,
 aside,
@@ -480,4 +488,9 @@ h5 {
 /* line 91, ../sass/_typography.scss */
 h6 {
   margin-bottom: 0.8em;
+}
+
+/* line 61, ../sass/styles.scss */
+.fontello {
+  font-family: 'fontello';
 }
