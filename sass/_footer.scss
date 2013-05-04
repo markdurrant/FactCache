@@ -8,4 +8,22 @@
   padding: 20px 20px 80px;
   color: #3b4954;
   margin-top: 80px;
+  text-align: center;
+
+  a{
+    @include transition-property(text-shadow, color, border-bottom);
+    @include transition-duration(.3s);
+
+    color: #3b4954;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px dotted lighten(#3b4954, 10);
+
+    &:hover{
+      @include text-shadow(none);
+
+      color: white;
+      border-bottom: 1px dotted white;
+    }
+  }
 }

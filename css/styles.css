@@ -284,32 +284,40 @@ dd {
 
 /* line 47, ../sass/_elements.scss */
 a {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   color: #519ad5;
   font-weight: bolder;
 }
-/* line 51, ../sass/_elements.scss */
+/* line 54, ../sass/_elements.scss */
 a:hover {
   color: #2a74af;
 }
 
-/* line 56, ../sass/_elements.scss */
+/* line 59, ../sass/_elements.scss */
 blockquote {
   margin: 0;
   padding: 0 2em;
   border-left: 0.2em solid black;
   font-style: italic;
 }
-/* line 62, ../sass/_elements.scss */
+/* line 65, ../sass/_elements.scss */
 blockquote p:before {
   margin: 0 0.2em 0 -0.6em;
   content: "“";
 }
-/* line 67, ../sass/_elements.scss */
+/* line 70, ../sass/_elements.scss */
 blockquote p:after {
   content: "”";
 }
 
-/* line 72, ../sass/_elements.scss */
+/* line 75, ../sass/_elements.scss */
 pre {
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
@@ -321,7 +329,7 @@ pre {
   color: #b2c3cf;
 }
 
-/* line 81, ../sass/_elements.scss */
+/* line 84, ../sass/_elements.scss */
 p code,
 p samp {
   -webkit-border-radius: 0.2em;
@@ -334,14 +342,14 @@ p samp {
   background-color: #a5b9c7;
 }
 
-/* line 89, ../sass/_elements.scss */
+/* line 92, ../sass/_elements.scss */
 hr {
   margin: 2em 0;
   border: 0;
   border-top: 1px dashed black;
 }
 
-/* line 98, ../sass/_elements.scss */
+/* line 101, ../sass/_elements.scss */
 button, .btn,
 input[type="button"],
 input[type="reset"],
@@ -360,7 +368,7 @@ input[type="submit"] {
   font-weight: normal;
   line-height: 1;
 }
-/* line 110, ../sass/_elements.scss */
+/* line 113, ../sass/_elements.scss */
 button:hover, .btn:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -502,24 +510,55 @@ h6 {
 
 /* line 12, ../sass/_header.scss */
 .site-header {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8600), color-stop(100%, #f57a00));
-  background-image: -webkit-linear-gradient(#ff8600, #f57a00);
-  background-image: -moz-linear-gradient(#ff8600, #f57a00);
-  background-image: -o-linear-gradient(#ff8600, #f57a00);
-  background-image: linear-gradient(#ff8600, #f57a00);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f57a00), color-stop(100%, #ff8600));
+  background-image: -webkit-linear-gradient(#f57a00, #ff8600);
+  background-image: -moz-linear-gradient(#f57a00, #ff8600);
+  background-image: -o-linear-gradient(#f57a00, #ff8600);
+  background-image: linear-gradient(#f57a00, #ff8600);
   -webkit-box-shadow: 0 4px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 4px rgba(0, 0, 0, 0.075);
   box-shadow: 0 4px rgba(0, 0, 0, 0.075);
-  height: 50px;
+  -webkit-transition-property: top;
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  transition-property: top;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  height: 250px;
   background-color: #ff8100;
   position: fixed;
-  top: 0;
+  top: -200px;
   left: 0;
   width: 100%;
   z-index: 999;
 }
+/* line 26, ../sass/_header.scss */
+.site-header.show-info {
+  top: 0;
+}
 
-/* line 25, ../sass/_header.scss */
+/* line 31, ../sass/_header.scss */
+.info-content {
+  height: 200px;
+  padding: 10px;
+}
+/* line 35, ../sass/_header.scss */
+.info-content h3 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: "brandon-grotesque";
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+  max-width: 700px;
+}
+/* line 45, ../sass/_header.scss */
+.info-content a {
+  color: white;
+}
+
+/* line 50, ../sass/_header.scss */
 .branding {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   font-family: "brandon-grotesque";
@@ -530,13 +569,13 @@ h6 {
   margin-left: 9px;
 }
 
-/* line 36, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 .info-btn {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
+  -webkit-transition-property: text-shadow, color;
+  -moz-transition-property: text-shadow, color;
+  -o-transition-property: text-shadow, color;
+  transition-property: text-shadow, color;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
@@ -544,7 +583,7 @@ h6 {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   text-align: center;
   cursor: pointer;
@@ -552,7 +591,7 @@ h6 {
   line-height: 52px;
   font-size: 28px;
 }
-/* line 52, ../sass/_header.scss */
+/* line 77, ../sass/_header.scss */
 .info-btn:hover {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
   color: #ae5700;
@@ -565,17 +604,39 @@ h6 {
   padding: 20px 20px 80px;
   color: #3b4954;
   margin-top: 80px;
+  text-align: center;
+}
+/* line 13, ../sass/_footer.scss */
+.site-footer a {
+  -webkit-transition-property: text-shadow, color, border-bottom;
+  -moz-transition-property: text-shadow, color, border-bottom;
+  -o-transition-property: text-shadow, color, border-bottom;
+  transition-property: text-shadow, color, border-bottom;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #3b4954;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px dotted #506372;
+}
+/* line 22, ../sass/_footer.scss */
+.site-footer a:hover {
+  text-shadow: none;
+  color: white;
+  border-bottom: 1px dotted white;
 }
 
 /* line 40, ../sass/_homepage.scss */
-.intro {
+.event {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
   text-align: center;
   margin: 15px 0;
   color: #828f99;
 }
 /* line 47, ../sass/_homepage.scss */
-.intro p {
+.event p {
   margin-bottom: 0;
 }
 
@@ -667,10 +728,10 @@ h6 {
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
   background-image: linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
+  -webkit-transition-property: background-color, border, border-bottom;
+  -moz-transition-property: background-color, border, border-bottom;
+  -o-transition-property: background-color, border, border-bottom;
+  transition-property: background-color, border, border-bottom;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
