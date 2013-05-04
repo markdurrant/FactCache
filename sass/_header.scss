@@ -1,3 +1,57 @@
 //===============================================================================
 // HEADER
+//
+// <header class="site-header">
+//   <h1 class="branding">FACT CACHE</h1>
+
+//   <div class="info-btn">
+//     <span class="fontello">i</span>
+//   </div>
+// </header> <!-- end .site-header -->
 //===============================================================================
+.site-header{
+  @include background-image(linear-gradient(#ff8600, #f57a00));
+  @include box-shadow(0 4px hsla(0, 0, 0, .075));
+  
+  height: 50px;
+  background-color: #ff8100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.branding{
+  @include text-shadow(2px 2px hsla(0, 0, 0 ,.2));
+
+  font-family: "brandon-grotesque";
+  font-weight: 900;
+  color: white;
+  font-size: 34px;
+  line-height: 53px;
+  margin-left: 9px;
+}
+
+.info-btn{
+  @include text-shadow(1px 1px hsla(0, 0, 100, .2));
+  @include transition-property(all);
+  @include transition-duration(.3s);
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  color: $info-btn;
+  line-height: 52px;
+  font-size: 28px;
+
+  &:hover{
+    @include text-shadow(1px 1px hsla(0, 0, 100, .3));
+
+    color: darken($info-btn, 7.5);
+  }
+}

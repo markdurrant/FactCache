@@ -243,11 +243,11 @@ table {
 
 /* line 12, ../sass/_elements.scss */
 body {
-  background-color: white;
+  background-color: #b2c3cf;
   color: black;
-  font-size: 1.0625em;
-  font-family: sans-serif;
-  line-height: 1.4;
+  font-size: 14px;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.3;
 }
 
 /* line 26, ../sass/_elements.scss */
@@ -284,12 +284,12 @@ dd {
 
 /* line 47, ../sass/_elements.scss */
 a {
-  color: #0044cc;
+  color: #519ad5;
   font-weight: bolder;
 }
 /* line 51, ../sass/_elements.scss */
 a:hover {
-  color: #003399;
+  color: #2f81c4;
 }
 
 /* line 56, ../sass/_elements.scss */
@@ -318,7 +318,7 @@ pre {
   border-radius: 0.2em;
   padding: .85em 1.05em;
   background-color: #333333;
-  color: white;
+  color: #b2c3cf;
 }
 
 /* line 81, ../sass/_elements.scss */
@@ -330,8 +330,8 @@ p samp {
   -o-border-radius: 0.2em;
   border-radius: 0.2em;
   padding: 0 .4em;
-  border: 1px solid #dfdfdf;
-  background-color: whitesmoke;
+  border: 1px solid #8ba4b7;
+  background-color: #a5b9c7;
 }
 
 /* line 89, ../sass/_elements.scss */
@@ -354,8 +354,8 @@ input[type="submit"] {
   display: inline-block;
   padding: .3em .5em;
   border: 0;
-  background-color: #b3b3b3;
-  color: white;
+  background-color: #59798f;
+  color: #b2c3cf;
   text-decoration: none;
   font-weight: normal;
   line-height: 1;
@@ -365,8 +365,8 @@ button:hover, .btn:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #999999;
-  color: white;
+  background-color: #465e6f;
+  color: #b2c3cf;
 }
 
 /* line 5, ../sass/_helpers.scss */
@@ -380,6 +380,11 @@ input[type="submit"]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 4, ../sass/_layout.scss */
+.wrap {
+  margin-top: 67px;
 }
 
 /* line 4, ../sass/_typography.scss */
@@ -490,7 +495,199 @@ h6 {
   margin-bottom: 0.8em;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 12, ../sass/_header.scss */
+.site-header {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8600), color-stop(100%, #f57a00));
+  background-image: -webkit-linear-gradient(#ff8600, #f57a00);
+  background-image: -moz-linear-gradient(#ff8600, #f57a00);
+  background-image: -o-linear-gradient(#ff8600, #f57a00);
+  background-image: linear-gradient(#ff8600, #f57a00);
+  -webkit-box-shadow: 0 4px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 4px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 4px rgba(0, 0, 0, 0.075);
+  height: 50px;
+  background-color: #ff8100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 25, ../sass/_header.scss */
+.branding {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: "brandon-grotesque";
+  font-weight: 900;
+  color: white;
+  font-size: 34px;
+  line-height: 53px;
+  margin-left: 9px;
+}
+
+/* line 36, ../sass/_header.scss */
+.info-btn {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #d46a00;
+  line-height: 52px;
+  font-size: 28px;
+}
+/* line 52, ../sass/_header.scss */
+.info-btn:hover {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+  color: #ae5700;
+}
+
+/* line 4, ../sass/_footer.scss */
+.site-footer {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+  background-color: #93a9b8;
+  padding: 20px 20px 80px;
+  color: #3b4954;
+  margin-top: 80px;
+}
+
+/* line 63, ../sass/styles.scss */
 .fontello {
   font-family: 'fontello';
+}
+
+/* line 67, ../sass/styles.scss */
+.intro {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin: 15px 0;
+  color: #828f99;
+}
+/* line 74, ../sass/styles.scss */
+.intro p {
+  margin-bottom: 0;
+}
+
+/* line 79, ../sass/styles.scss */
+.fact-container {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 6px 6px #a9becf;
+  -moz-box-shadow: 6px 6px #a9becf;
+  box-shadow: 6px 6px #a9becf;
+  background-color: white;
+  margin: 0 20px 30px;
+  padding: 10px;
+}
+
+/* line 88, ../sass/styles.scss */
+.visual {
+  background-color: #e6e6e6;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+/* line 95, ../sass/styles.scss */
+.fact-title {
+  font-size: 20px;
+  line-height: 1.15;
+  color: #373640;
+  margin: 20px 0;
+}
+
+/* line 103, ../sass/styles.scss */
+.data,
+.project {
+  margin-bottom: 10px;
+}
+
+/* line 107, ../sass/styles.scss */
+.label {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #beccd6;
+  color: #384a5c;
+  line-height: 16px;
+  padding: 1px 1px 1px 3px;
+  position: relative;
+  margin-right: 10px;
+  z-index: 2;
+}
+/* line 118, ../sass/styles.scss */
+.label:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: -1;
+  right: -6px;
+  top: 2px;
+  content: "";
+  background-color: #beccd6;
+  width: 15px;
+  height: 15px;
+}
+
+/* line 133, ../sass/styles.scss */
+.share {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.075)), color-stop(100%, rgba(0, 0, 0, 0.075)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.075), rgba(0, 0, 0, 0.075));
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  height: 30px;
+  text-align: center;
+  background-color: #4099FF;
+  color: white;
+  line-height: 31px;
+  font-size: 22px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 1px solid #2189ff;
+  border-bottom: 1px solid #0076fd;
+}
+/* line 151, ../sass/styles.scss */
+.share:hover {
+  background-color: #0d7eff;
+  border: 1px solid #0071f3;
+  border-bottom: 1px solid #0065d9;
 }
