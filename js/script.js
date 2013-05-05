@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   // show/hide header stuff
   $('.info-btn, .info-content').click(function () {
-    $('.site-header').toggleClass('show-info');
+    $('.site-header').toggleClass('show-info hide-info');
   });
 
   // generate some extra items for styling purposes
