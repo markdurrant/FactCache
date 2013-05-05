@@ -36,6 +36,21 @@ $(document).ready(function() {
     }
   ]
 
+  var data2 = [
+    {
+      value: 310,
+      color: emerland,
+    },
+    {
+      value: 180,
+      color: orange,
+    },
+    {
+      value: 90,
+      color: blue,
+    }
+  ]
+
   // show/hide header stuff
   $('.info-btn, .info-content').click(function () {
     $('.site-header').toggleClass('show-info hide-info');
@@ -49,6 +64,11 @@ $(document).ready(function() {
   // example chart
   var ctx = document.getElementById('myChart').getContext('2d');
   var myNewChart = new Chart(ctx).Pie(data, {
+    animateScale: true,
+  });
+
+  var ctx2 = document.getElementById('myChart2').getContext('2d');
+  var myNewChart = new Chart(ctx2).Doughnut(data2, {
     animateScale: true,
   });
 
