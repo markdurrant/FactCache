@@ -11,3 +11,6 @@ It does it on the front-end with Sass & Compass for styling and jQuery & Chart.j
 
 ## who did it… 
 Mark Durrant as part of the @rewiredstate Follow the data London hackathon on the 5th of May 2013.
+
+### Licence
+Fact cache is released under the [WTFPL](http://www.wtfpl.net/)
