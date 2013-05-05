@@ -42,7 +42,11 @@
 
   text-align: center;
   margin: 15px 0;
-  color: #828f99;
+  color: darken($paper, 12);
+  font-size: 18px;
+  font-family: "brandon-grotesque";
+  text-transform: uppercase;
+  line-height: 1.2;
 
   p{
     margin-bottom: 0;
