@@ -74,8 +74,8 @@
   text-align: center;
   cursor: pointer;
   color: $info-btn;
-  line-height: 52px;
-  font-size: 28px;
+  line-height: 50px;
+  font-size: 34px;
 
   &:hover{
     @include text-shadow(1px 1px hsla(0, 0, 100, .3));

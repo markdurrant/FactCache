@@ -591,14 +591,14 @@ h6 {
   right: 0;
   text-align: center;
   cursor: pointer;
-  color: #d46a00;
-  line-height: 52px;
-  font-size: 28px;
+  color: #d96d00;
+  line-height: 50px;
+  font-size: 34px;
 }
 /* line 80, ../sass/_header.scss */
 .info-btn:hover {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
-  color: #ae5700;
+  color: #b35900;
 }
 
 /* line 4, ../sass/_footer.scss */
