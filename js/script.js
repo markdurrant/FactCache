@@ -51,6 +51,36 @@ $(document).ready(function() {
     }
   ]
 
+  var data3 = [
+    {
+      value: 30,
+      color: orange,
+    },
+    {
+      value: 80,
+      color: blue,
+    },
+    {
+      value: 20,
+      color: emerland,
+    }
+  ]
+
+  var data4 = [
+    {
+      value: 310,
+      color: emerland,
+    },
+    {
+      value: 180,
+      color: orange,
+    },
+    {
+      value: 90,
+      color: blue,
+    }
+  ]
+
   // show/hide header stuff
   $('.info-btn, .info-content').click(function () {
     $('.site-header').toggleClass('show-info hide-info');
@@ -71,5 +101,17 @@ $(document).ready(function() {
   var myNewChart = new Chart(ctx2).Doughnut(data2, {
     animateScale: true,
   });
+
+  var ctx3 = document.getElementById('myChart3').getContext('2d');
+  var myNewChart = new Chart(ctx3).Pie(data3, {
+    animateScale: true,
+  });
+
+  var ctx4 = document.getElementById('myChart4').getContext('2d');
+  var myNewChart = new Chart(ctx4).Doughnut(data4, {
+    animateScale: true,
+  });
+
+
 
 });
