@@ -517,14 +517,6 @@ h6 {
   -webkit-box-shadow: 0 4px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 4px rgba(0, 0, 0, 0.075);
   box-shadow: 0 4px rgba(0, 0, 0, 0.075);
-  -webkit-transition-property: top;
-  -moz-transition-property: top;
-  -o-transition-property: top;
-  transition-property: top;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
   height: 250px;
   background-color: #ff8100;
   position: fixed;
@@ -533,17 +525,25 @@ h6 {
   width: 100%;
   z-index: 999;
 }
-/* line 26, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 .site-header.show-info {
+  -webkit-transition-property: top;
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  transition-property: top;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
   top: 0;
 }
 
-/* line 31, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 .info-content {
   height: 200px;
   padding: 10px;
 }
-/* line 35, ../sass/_header.scss */
+/* line 36, ../sass/_header.scss */
 .info-content h3 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   font-family: "brandon-grotesque";
@@ -552,12 +552,12 @@ h6 {
   color: white;
   max-width: 700px;
 }
-/* line 45, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 .info-content a {
   color: white;
 }
 
-/* line 50, ../sass/_header.scss */
+/* line 51, ../sass/_header.scss */
 .branding {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   font-family: "brandon-grotesque";
@@ -568,7 +568,7 @@ h6 {
   margin-left: 9px;
 }
 
-/* line 61, ../sass/_header.scss */
+/* line 62, ../sass/_header.scss */
 .info-btn {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
   -webkit-transition-property: text-shadow, color;
@@ -590,7 +590,7 @@ h6 {
   line-height: 52px;
   font-size: 28px;
 }
-/* line 77, ../sass/_header.scss */
+/* line 78, ../sass/_header.scss */
 .info-btn:hover {
   text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
   color: #ae5700;

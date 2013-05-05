@@ -12,8 +12,6 @@
 .site-header{
   @include background-image(linear-gradient(#f57a00, #ff8600));
   @include box-shadow(0 4px hsla(0, 0, 0, .075));
-  @include transition-property(top);
-  @include transition-duration(.25s);
   
   height: 250px;
   background-color: #ff8100;
@@ -24,6 +22,9 @@
   z-index: 999;
 
   &.show-info{
+    @include transition-property(top);
+    @include transition-duration(.25s);
+
     top: 0;
   }
 }
