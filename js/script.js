@@ -24,24 +24,16 @@ $(document).ready(function() {
   var data = [
     {
       value: 30,
-      color: yellow,
+      color: orange,
     },
     {
       value: 80,
-      color: grey,
+      color: blue,
     },
     {
       value: 20,
-      color: purple,
-    },
-    {
-      value: 190,
       color: emerland,
-    },
-    {
-      value: 10,
-      color: red,
-    },
+    }
   ]
 
   // show/hide header stuff
@@ -50,9 +42,9 @@ $(document).ready(function() {
   });
 
   // generate some extra items for styling purposes
-  for ( var i = 0; i < 3; i++ ){
-    $(".fact-container").clone().appendTo(".facts-list"); 
-  }
+  // for ( var i = 0; i < 3; i++ ){
+  //   $(".fact-container").clone().appendTo(".facts-list"); 
+  // }
 
   // example chart
   var ctx = document.getElementById('myChart').getContext('2d');

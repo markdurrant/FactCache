@@ -665,6 +665,37 @@ h6 {
 }
 
 /* line 69, ../sass/_homepage.scss */
+.chart-labels span {
+  color: #565469;
+  position: relative;
+  padding-left: 1.3em;
+  margin-right: 1em;
+}
+/* line 75, ../sass/_homepage.scss */
+.chart-labels span:before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 2px;
+  background: #e67e22;
+  height: 1em;
+  width: 1em;
+}
+/* line 87, ../sass/_homepage.scss */
+.chart-labels span:nth-child(2):before {
+  background: #3498db;
+}
+/* line 91, ../sass/_homepage.scss */
+.chart-labels span:nth-child(3):before {
+  background: #2ecc71;
+}
+
+/* line 96, ../sass/_homepage.scss */
 .fact-title {
   font-size: 20px;
   line-height: 1.15;
@@ -672,13 +703,28 @@ h6 {
   margin: 20px 0;
 }
 
-/* line 77, ../sass/_homepage.scss */
+/* line 103, ../sass/_homepage.scss */
+.text-fact {
+  margin-top: 0;
+  font-size: 36px;
+  line-height: 1.05;
+  color: #e74c3c;
+  font-weight: 900;
+}
+
+/* line 111, ../sass/_homepage.scss */
+.image-fact {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 117, ../sass/_homepage.scss */
 .data,
 .project {
   margin-bottom: 10px;
 }
 
-/* line 81, ../sass/_homepage.scss */
+/* line 121, ../sass/_homepage.scss */
 .label {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -693,7 +739,7 @@ h6 {
   margin-right: 10px;
   z-index: 2;
 }
-/* line 92, ../sass/_homepage.scss */
+/* line 132, ../sass/_homepage.scss */
 .label:after {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -715,7 +761,7 @@ h6 {
   height: 15px;
 }
 
-/* line 107, ../sass/_homepage.scss */
+/* line 147, ../sass/_homepage.scss */
 .share {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -747,7 +793,7 @@ h6 {
   border: 1px solid #2189ff;
   border-bottom: 1px solid #0076fd;
 }
-/* line 125, ../sass/_homepage.scss */
+/* line 165, ../sass/_homepage.scss */
 .share:hover {
   background-color: #0d7eff;
   border: 1px solid #0071f3;
