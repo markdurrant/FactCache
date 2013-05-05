@@ -344,12 +344,11 @@ p samp {
 
 /* line 92, ../sass/_elements.scss */
 hr {
-  margin: 2em 0;
+  margin: 0;
   border: 0;
-  border-top: 1px dashed black;
 }
 
-/* line 101, ../sass/_elements.scss */
+/* line 100, ../sass/_elements.scss */
 button, .btn,
 input[type="button"],
 input[type="reset"],
@@ -368,7 +367,7 @@ input[type="submit"] {
   font-weight: normal;
   line-height: 1;
 }
-/* line 113, ../sass/_elements.scss */
+/* line 112, ../sass/_elements.scss */
 button:hover, .btn:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -810,27 +809,30 @@ h6 {
 @media (min-width: 700px) {
   /* line 12, ../sass/_media-queries.scss */
   .fact-container {
-    width: 49%;
-    margin: 0 2% 30px 0;
+    width: 48%;
+    margin: 0 1% 30px;
   }
-  /* line 16, ../sass/_media-queries.scss */
-  .fact-container:nth-child(2n) {
-    margin-right: 0;
+
+  /* line 17, ../sass/_media-queries.scss */
+  .facts-list hr:nth-child(4n) {
+    width: 100%;
   }
 }
 @media (min-width: 880px) {
   /* line 23, ../sass/_media-queries.scss */
   .fact-container {
-    width: 32%;
-    margin: 0 2% 30px 0;
+    width: 31.33333%;
+    margin: 0 1% 30px;
   }
-  /* line 27, ../sass/_media-queries.scss */
-  .fact-container:nth-child(2n) {
-    margin-right: 2%;
+
+  /* line 28, ../sass/_media-queries.scss */
+  .facts-list hr:nth-child(4n) {
+    width: 0;
   }
-  /* line 31, ../sass/_media-queries.scss */
-  .fact-container:nth-child(3n) {
-    margin-right: 0%;
+
+  /* line 32, ../sass/_media-queries.scss */
+  .facts-list hr:nth-child(6n) {
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
