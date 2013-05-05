@@ -83,3 +83,16 @@ $grey-alt: #7F8C8D;
 // DEV-STYLES
 //===============================================================================
 // playground for development
+
+.demo-body{
+  padding-top: 10em;
+}
+
+.demo{
+  @include text-shadow(10px 10px hsla(0,0,0,.07));
+
+  color: darken(#3f3d4d, 10);
+  text-align: center;
+  font-size: 12em;
+  line-height: .8;
+}
