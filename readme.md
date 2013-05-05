@@ -6,7 +6,8 @@ A place to share diamonds found whilst mining open data.
 During hackathons developers often find really interesting little factoids but they often get forgotten in the rush to create nifty applications. Fact cache displays these little nuggets of awesome for everyone to see & share.
 
 ## how does it…
-It does it on the front-end with Sass & Compass for styling and jQuery & Chart.js (cobbled together) for everything else. All the factoids/data are hard-coded because the author is allergic to servers. 
+It does it on the front-end with Sass & Compass for styling and jQuery & Chart.js (cobbled together) for everything else. currently using hard-coded dummy data, because the author is  allergic to servers.
+
 
 ## what's a fact…
 There are 3 types of 'fact' in fact cache.
