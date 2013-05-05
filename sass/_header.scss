@@ -15,7 +15,7 @@
   @include transition-property(top);
   @include transition-duration(.25s);
   
-  height: 250px;
+  height: 300px;
   background-color: #ff8100;
   position: fixed;
   left: 0;
@@ -24,7 +24,7 @@
 }
 
 .hide-info{
-  top: -200px;
+  top: -250px;
 }
 
 .show-info{
@@ -32,15 +32,15 @@
 }
 
 .info-content{
-  height: 200px;
+  height: 250px;
   padding: 10px;
 
   h3{
     @include text-shadow(2px 2px hsla(0, 0, 0 ,.2));
 
-    font-family: "brandon-grotesque";
-    font-weight: 900;
+    font-weight: 400;
     font-size: 24px;
+    line-height: 1.1;
     color: white;
     max-width: 700px;
   }

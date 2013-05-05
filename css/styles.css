@@ -525,7 +525,7 @@ h6 {
   -moz-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  height: 250px;
+  height: 300px;
   background-color: #ff8100;
   position: fixed;
   left: 0;
@@ -535,7 +535,7 @@ h6 {
 
 /* line 26, ../sass/_header.scss */
 .hide-info {
-  top: -200px;
+  top: -250px;
 }
 
 /* line 30, ../sass/_header.scss */
@@ -545,15 +545,15 @@ h6 {
 
 /* line 34, ../sass/_header.scss */
 .info-content {
-  height: 200px;
+  height: 250px;
   padding: 10px;
 }
 /* line 38, ../sass/_header.scss */
 .info-content h3 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  font-family: "brandon-grotesque";
-  font-weight: 900;
+  font-weight: 400;
   font-size: 24px;
+  line-height: 1.1;
   color: white;
   max-width: 700px;
 }
